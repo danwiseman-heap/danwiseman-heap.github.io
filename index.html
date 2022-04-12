@@ -1,194 +1,44 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>TierOne Store</title>
-      <link rel="stylesheet" href="css/styling.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <title>Sign In</title>
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+      <link href="css/custom.css" rel="stylesheet">
       <script type="text/javascript">
         window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
         heap.load("1422755456");
       </script>
    </head>
-   <body>
-      <!-- Start Top Bar -->
-      <div class="top-bar">
-         <div class="row">
-            <div class="top-bar-left">
-               <ul class="dropdown menu" data-dropdown-menu>
-                  <li class="menu-text">TierOne Store</li>
-                  <li class="has-submenu">
-                     <a href="#">One</a>
-                     <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="#">One</a></li>
-                        <li><a href="#">Two</a></li>
-                        <li><a href="#">Three</a></li>
-                     </ul>
-                  </li>
-                  <li><a href="#">Two</a></li>
-                  <li><a href="#">Three</a></li>
-               </ul>
+   <body class="text-center">
+      <main class="form-signin">
+         <form>
+            <img class="mb-4" src="img/heap-logo.png" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 fw-normal">Sign In to Heap</h1>
+            <div class="form-floating">
+               <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+               <label for="floatingInput">Email address</label>
             </div>
-            <div class="top-bar-right">
-               <ul class="menu">
-                  <li><input type="search" placeholder="Search"></li>
-                  <li><button type="button" class="button">Search</button></li>
-               </ul>
+            <div class="form-floating">
+               <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+               <label for="floatingPassword">Password</label>
             </div>
-         </div>
-      </div>
-      <!-- End Top Bar -->
-      <br>
-      <div class="row columns">
-         <nav aria-label="You are here:" role="navigation">
-            <ul class="breadcrumbs">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Products</a></li>
-               <!--<li class="disabled"></li>-->
-               <li>
-                  <span class="show-for-sr">Current: </span> New Products
-               </li>
-            </ul>
-         </nav>
-      </div>
-      <div class="row">
-         <div class="medium-6 columns">
-            <img class="thumbnail" src="https://dummyimage.com/650x350/000/fff">
-            <div class="row small-up-4">
-               <div class="column">
-                  <img class="thumbnail" src="https://dummyimage.com/250x200/000/fff">
-               </div>
-               <div class="column">
-                  <img class="thumbnail" src="https://dummyimage.com/250x200/000/fff">
-               </div>
-               <div class="column">
-                  <img class="thumbnail" src="https://dummyimage.com/250x200/000/fff">
-               </div>
-               <div class="column">
-                  <img class="thumbnail" src="https://dummyimage.com/250x200/000/fff">
-               </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Sign In</button>
+
+            <!-- START: Tier 1 Certification - HTML & CSS Basics - Exercise 1: HTML Implementation -->
+            <div id="tier1-htmlcssbasics-exercise1" class="mt-4 mb-2">
+               <span id="more-info" class="h7">
+                  Visit <a href="https://heap.io">heap.io</a> to find out more.
+               </span>
             </div>
-         </div>
-         <div class="medium-6 large-5 columns">
-            <h3>My New Product</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non felis at tortor consequat porta ac ut nisl. Nam fringilla nisl elit, sed ultricies mi consequat non. Mauris metus odio, tincidunt eget velit in, sodales facilisis ex. Phasellus tempus purus nec erat pulvinar porttitor.</p>
-            <label>
-               Size
-               <select>
-                  <option value="husker">Small</option>
-                  <option value="starbuck">Medium</option>
-                  <option value="hotdog">Large</option>
-                  <option value="apollo">Yeti</option>
-               </select>
-            </label>
-            <div class="row">
-               <div class="small-3 columns">
-                  <label for="middle-label" class="middle">Quantity</label>
-               </div>
-               <div class="small-9 columns">
-                  <input type="text" id="middle-label" placeholder="1-5">
-               </div>
-            </div>
-            <a href="#" class="button large expanded">Buy Now</a>
-            <div class="small secondary expanded button-group">
-               <a class="button">Facebook</a>
-               <a class="button">Twitter</a>
-               <a class="button">Instagram</a>
-            </div>
-         </div>
-      </div>
-      <div class="column row">
-         <hr>
-         <ul class="tabs" data-tabs id="example-tabs">
-            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Reviews</a></li>
-            <li class="tabs-title"><a href="#panel2">Similar Products</a></li>
-         </ul>
-         <div class="tabs-content" data-tabs-content="example-tabs">
-            <div class="tabs-panel is-active" id="panel1">
-               <h4>Reviews</h4>
-               <div class="media-object stack-for-small">
-                  <div class="media-object-section">
-                     <img class="thumbnail" src="https://dummyimage.com/200x200/000/fff">
-                  </div>
-                  <div class="media-object-section">
-                     <h5>John Doe</h5>
-                     <p>Phasellus ullamcorper sed ligula ut pulvinar. Aliquam erat sem, auctor vel varius eu, maximus eget justo. Ut ornare lacus neque, ac viverra enim tincidunt sed.</p>
-                  </div>
-               </div>
-               <div class="media-object stack-for-small">
-                  <div class="media-object-section">
-                     <img class="thumbnail" src="https://dummyimage.com/200x200/000/fff">
-                  </div>
-                  <div class="media-object-section">
-                     <h5>John Doe</h5>
-                     <p>Phasellus ullamcorper sed ligula ut pulvinar. Aliquam erat sem, auctor vel varius eu, maximus eget justo. Ut ornare lacus neque, ac viverra enim tincidunt sed.</p>
-                  </div>
-               </div>
-               <div class="media-object stack-for-small">
-                  <div class="media-object-section">
-                     <img class="thumbnail" src="https://dummyimage.com/200x200/000/fff">
-                  </div>
-                  <div class="media-object-section">
-                     <h5>John Doe</h5>
-                     <p>Phasellus ullamcorper sed ligula ut pulvinar. Aliquam erat sem, auctor vel varius eu, maximus eget justo. Ut ornare lacus neque, ac viverra enim tincidunt sed.</p>
-                  </div>
-               </div>
-               <label>
-               My Review
-               <textarea placeholder="None"></textarea>
-               </label>
-               <button class="button">Submit Review</button>
-            </div>
-            <div class="tabs-panel" id="panel2">
-               <div class="row medium-up-3 large-up-5">
-                  <div class="column">
-                     <img class="thumbnail" src="https://dummyimage.com/350x200/000/fff">
-                     <h5>Similar Product 1 <small>$22</small></h5>
-                     <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-                     <a href="#" class="button hollow tiny expanded">Buy Now</a>
-                  </div>
-                  <div class="column">
-                     <img class="thumbnail" src="https://dummyimage.com/350x200/000/fff">
-                     <h5>Similar Product 2 <small>$22</small></h5>
-                     <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-                     <a href="#" class="button hollow tiny expanded">Buy Now</a>
-                  </div>
-                  <div class="column">
-                     <img class="thumbnail" src="https://dummyimage.com/350x200/000/fff">
-                     <h5>Similar Product 3 <small>$22</small></h5>
-                     <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-                     <a href="#" class="button hollow tiny expanded">Buy Now</a>
-                  </div>
-                  <div class="column">
-                     <img class="thumbnail" src="https://dummyimage.com/350x200/000/fff">
-                     <h5>Similar Product 4 <small>$22</small></h5>
-                     <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-                     <a href="#" class="button hollow tiny expanded">Buy Now</a>
-                  </div>
-                  <div class="column">
-                     <img class="thumbnail" src="https://dummyimage.com/350x200/000/fff">
-                     <h5>Similar Product 5 <small>$22</small></h5>
-                     <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam.</p>
-                     <a href="#" class="button hollow tiny expanded">Buy Now</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="row column">
-         <hr>
-         <ul class="menu">
-            <li>TierOne Store</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-         </ul>
-         <hr>
-      </div>
-      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-      <script src="js/foundation.js"></script>
-      <script>
-         $(document).foundation();
-      </script>
+            <!-- END: Tier 1 Certification - HTML & CSS Basics - Exercise 1: HTML Implementation -->
+
+            <p class="mt-5 mb-3 text-muted">Dan Wiseman - Tier 1 Certification</p>
+         </form>
+      </main>
    </body>
 </html>
